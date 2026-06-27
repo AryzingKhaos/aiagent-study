@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { InMemoryChatMessageHistory } from "@langchain/core/chat_history";
 import { MilvusClient, MetricType } from '@zilliz/milvus2-sdk-node';

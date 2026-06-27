@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import { MilvusClient } from "@zilliz/milvus2-sdk-node";
 import { OpenAIEmbeddings } from "@langchain/openai";
 

@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import chalk from "chalk";
 import { ChatOpenAI } from "@langchain/openai";
 import {

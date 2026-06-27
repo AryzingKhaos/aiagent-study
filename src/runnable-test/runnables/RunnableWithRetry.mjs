@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import { RunnableLambda } from "@langchain/core/runnables";
 
 let attempt = 0;

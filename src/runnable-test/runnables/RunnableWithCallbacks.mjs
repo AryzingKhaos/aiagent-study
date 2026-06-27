@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import { RunnableLambda, RunnableSequence } from "@langchain/core/runnables";
 
 // 文本处理链：清洗 → 分词 → 统计

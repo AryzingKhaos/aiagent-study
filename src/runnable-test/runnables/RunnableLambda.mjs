@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 import { RunnableLambda, RunnableSequence } from "@langchain/core/runnables";
 
 const addOne = RunnableLambda.from((input) => {

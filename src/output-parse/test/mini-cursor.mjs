@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 import { ChatOpenAI } from '@langchain/openai';
 import { HumanMessage, SystemMessage, ToolMessage } from '@langchain/core/messages';
 import { InMemoryChatMessageHistory } from '@langchain/core/chat_history';

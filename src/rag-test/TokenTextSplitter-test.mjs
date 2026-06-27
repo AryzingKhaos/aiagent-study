@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import "cheerio";
 import { TokenTextSplitter } from "@langchain/textsplitters";
 import { Document } from "@langchain/core/documents";

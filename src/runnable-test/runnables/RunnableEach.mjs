@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 import { RunnableEach, RunnableLambda, RunnableSequence } from "@langchain/core/runnables";
 
 const toUpperCase = RunnableLambda.from((input) => input.toUpperCase());

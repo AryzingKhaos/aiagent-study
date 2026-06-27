@@ -1,4 +1,7 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
+dotenv.config({ override: true }); // 让 .env 覆盖 shell 里已存在的同名变量（如 OPENAI_BASE_URL）
+
 import { MultiServerMCPClient } from '@langchain/mcp-adapters';
 import { ChatOpenAI } from '@langchain/openai';
 import chalk from 'chalk';

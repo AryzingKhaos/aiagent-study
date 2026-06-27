@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 import { RunnableMap, RunnableLambda } from "@langchain/core/runnables";
 import { PromptTemplate } from "@langchain/core/prompts";
 

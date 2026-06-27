@@ -1,4 +1,6 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
+dotenv.config({ override: true }); // 让 .env 覆盖 shell 里已存在的同名变量（如 OPENAI_BASE_URL）
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { RunnableSequence, RunnableLambda } from "@langchain/core/runnables";
 import { MilvusClient, MetricType } from "@zilliz/milvus2-sdk-node";

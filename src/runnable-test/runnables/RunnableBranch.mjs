@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 import { RunnableBranch, RunnableLambda } from "@langchain/core/runnables";
 
 // 创建条件判断函数

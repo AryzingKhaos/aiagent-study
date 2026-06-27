@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import { RunnableLambda } from "@langchain/core/runnables";
 
 // 模拟三个"翻译服务"，优先级从高到低

@@ -1,4 +1,5 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import { RunnableLambda, RunnableSequence } from "@langchain/core/runnables";
 
 // 模拟一个简单的"用户数据库"
